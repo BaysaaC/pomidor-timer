@@ -1,0 +1,52 @@
+{
+  "name": "pomidor-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.html --open firefox",
+    "preset": "npx @becode/eslint-config --with-hook --with-script",
+    "lint": "npx eslint --fix --cache src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baysaaaa/pomidor-timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baysaaaa/pomidor-timer/issues"
+  },
+  "homepage": "https://github.com/Baysaaaa/pomidor-timer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@becode/eslint-config": "^0.12.1",
+    "eslint": "^8.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-unicorn": "^37.0.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "parcel": "^2.0.0",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "*.json": [
+      "npx prettier --write"
+    ],
+    "*.js": [
+      "npx eslint --fix --cache"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  }
+}
