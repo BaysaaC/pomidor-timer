@@ -1,0 +1,72 @@
+#app {
+    display: flex;
+    justify-content: center;
+    font-family:fantasy;
+    font-size: 7rem;
+}
+
+.modal-overlay {
+    position:fixed;
+    display:flex;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    background-color:rgba(0,0,0,0.3);
+}
+
+.modal-box {
+    background-color: white;
+    padding:1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0,0,0,0.5) 0.2rem 0.2rem 1rem;
+    font-family:fantasy;
+    font-size:2rem;
+    color:green;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content: center;
+}
+.cyphers {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    color:green;
+    font-weight: bold;
+}
+
+.toolbar {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    min-height: 2rem;
+    min-width: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    background-color: tomato;
+    margin: 1rem;
+    padding:1rem;
+    border-radius:2rem;
+    
+}
+
+button:hover{
+
+    background-color:lawngreen;
+    color:tomato;
+}
+
+button:disabled{
+
+    background-color:grey;
+    color:lightgrey;
+}
