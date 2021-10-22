@@ -2,7 +2,7 @@
   "name": "pomidor-timer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "npx parcel src/index.html --open firefox",
     "preset": "npx @becode/eslint-config --with-hook --with-script",
